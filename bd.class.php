@@ -25,7 +25,7 @@ if(!defined('EQDKP_INC')){
 
 if(!class_exists('bd')){
 	class bd extends game_generic {	
-		public $version			= '0.1.0';
+		public $version			= '0.1.1';
 		protected $this_game	= 'bd';
 		protected $types		= array('classes', 'professions', 'roles', 'filters');
 		protected $classes		= array();
@@ -47,42 +47,20 @@ if(!class_exists('bd')){
 				'recruitment'	=> true,
 				'parent'		=> false,
 			),
-			/*array (
-				'name'			=> 'profession1',
-				'type'			=> 'professions',
-				'primary'		=> false,
-				'admin'			=> false,
-				'decorate'		=> false,
-				'colorize'		=> false,
-				'roster'		=> false,
-				'recruitment'	=> false,
-				'parent'		=> false,
-			),
-			array (
-				'name'			=> 'profession2',
-				'type'			=> 'proffesions',
-				'primary'		=> false,
-				'admin'			=> false,
-				'decorate'		=> false,
-				'colorize'		=> false,
-				'roster'		=> false,
-				'recruitment'	=> false,
-				'parent'		=> false,
-			),*/
 		);
 		
 		public $default_roles = array (
-			1	=> array(1),						// Tank
-			2	=> array(2),						// Supporter
-			3	=> array(3, 4, 5, 6, 7, 8),			// Damage Dealer
+			1 => array(1),                       // Tank
+			2 => array(2),                       // Supporter
+			3 => array(3, 4, 5, 6, 7, 8, 9, 10), // Damage Dealer
 		);
 		
 		protected $class_colors = array();
 		
-		protected $glang		= array();
-		protected $lang_file	= array();
-		protected $path			= false;
-		public $lang			= false;
+		protected $glang     = array();
+		protected $lang_file = array();
+		protected $path      = false;
+		public $lang         = false;
 		
 		
 		public function __construct(){
@@ -117,7 +95,7 @@ if(!class_exists('bd')){
 					'category'		=> 'character',
 					'lang'			=> 'uc_level',
 					'min'			=> 1,
-					'max'			=> 50,
+					'max'			=> 60,
 					'value'			=> 1,
 					'undeletable'	=> true,
 					'sort'			=> 1

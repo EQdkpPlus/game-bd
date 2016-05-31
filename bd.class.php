@@ -55,7 +55,19 @@ if(!class_exists('bd')){
 			3 => array(3, 4, 5, 6, 7, 8, 9, 10), // Damage Dealer
 		);
 		
-		protected $class_colors = array();
+		protected $class_colors = array(
+			0	=> '#E1E1E1',
+			1	=> '#E66969',
+			2	=> '#E57B38',
+			3	=> '#672fe7',
+			4	=> '#914CC5',
+			5	=> '#EDFF40',
+			6	=> '#06C28B',
+			7	=> '#CA2A52',
+			8	=> '#8238A5',
+			9	=> '#8BE6FF',
+			10	=> '#5385B1',
+		);
 		
 		protected $glang     = array();
 		protected $lang_file = array();

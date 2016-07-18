@@ -52,7 +52,7 @@ if(!class_exists('bd')){
 		public $default_roles = array (
 			1 => array(1),                       // Tank
 			2 => array(2),                       // Supporter
-			3 => array(3, 4, 5, 6, 7, 8, 9, 10), // Damage Dealer
+			3 => array(3, 4, 5, 6, 7, 8, 9, 10, 11, 12), // Damage Dealer
 		);
 		
 		protected $class_colors = array();

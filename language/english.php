@@ -35,6 +35,8 @@ $english_array = array(
 		8 => 'Sorceress',
 		9 => 'Maehwa',
 		10 => 'Musa',
+		11 => 'Kunoichi',
+		12 => 'Ninja',
 	),
 	'professions' => array(
 		'primary' => array(

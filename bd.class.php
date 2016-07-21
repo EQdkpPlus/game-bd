@@ -25,7 +25,7 @@ if(!defined('EQDKP_INC')){
 
 if(!class_exists('bd')){
 	class bd extends game_generic {	
-		public $version			= '0.1.2';
+		public $version			= '0.1.3';
 		protected $this_game	= 'bd';
 		protected $types		= array('classes', 'professions', 'roles', 'filters');
 		protected $classes		= array();
